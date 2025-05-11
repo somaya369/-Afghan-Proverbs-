@@ -1,0 +1,283 @@
+body{
+    font-family: Arial, sana-serif;
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+header{
+    background-color: #8b4513;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+nav ul{
+display: flex;
+justify-content: center;
+list-style-type: none;
+padding: 0;
+}
+nav li{
+    margin: 0 1rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+  color: black;
+ transform: scale(1.1);
+ cursor: pointer;
+}
+.subtitle{
+    font-style: italic;
+}
+ .introduction, .featured, .gallery, .detail, .wall {
+    padding: 2rem;
+    text-align: center;
+  } 
+   .search-bar{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+   }
+   .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+   }
+   .filter-section {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .filter-btn {
+    background-color: #DAA520; 
+    border: none;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filter-btn:hover {
+    background-color: #8B4513; 
+    transform: scale(1.05);
+  }
+  
+  .filter-btn.active {
+    background-color: #8B4513;
+    font-weight: bold;
+  }
+
+
+
+
+
+  
+   .card{
+    background-color: #daa520;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.6s;
+    font-family: 'Noto serif', serif;
+    position: relative;
+   }
+   .card:hover{
+    transform: scale(1.06);
+    font-weight: bolder;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.539);
+   }
+   .hover-card .meaning{
+    display: none;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+    
+   }
+   .hover-card:hover .meaning {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+  }
+   @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1;}
+   }
+   .card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid #eee;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+   main.detail {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    font-family: 'Poppins', sans-serif;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  main.detail h2 {
+    text-align: center;
+    color: #5c3a1e;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  main.detail .icon {
+    font-size: 1.5rem;
+    vertical-align: middle;
+  }
+  
+  main.detail .proverb {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4a2c10;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  main.detail .translation {
+    font-style: italic;
+    text-align: center;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  main.detail .explanation-box {
+    background-color: #fffaf5;
+    border-left: 4px solid #8b4513;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+  }
+  
+  main.detail .explanation-box h3 {
+    margin-top: 0;
+    color: #8b4513;
+    font-size: 1.2rem;
+  }
+  
+  main.detail .button {
+    display: inline-block;
+    background-color: #8b4513;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  main.detail .button:hover {
+    background-color: #a0522d;
+    transform: scale(1.05);
+  }
+  
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+ 
+.simple-footer {
+  background-color: #8b4513; 
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.simple-footer .container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.simple-footer p {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #daa52052;
+}
+
+
+
+#contact-form {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#contact-form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+#contact-form input, #contact-form textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contact-form button {
+  background-color: #8b4513bd; 
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #8b4513;
+}

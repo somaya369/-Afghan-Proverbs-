@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+      <header>
+        <h1>Afghan Proverbs</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Interactive.html">Interactive Wall</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+ <section id="contact-form">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
+
+    <button type="submit">Send Message</button>
+    <p id="successMessage" style="display: none; color: green; margin-top: 10px;">
+      Thank you! Your message has been submitted.
+    </p>
+  </form>
+</section>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    document.getElementById('successMessage').style.display = 'block';
+    this.reset(); 
+  });
+</script>
+
+<footer class="simple-footer">
+  <div class="container">
+    <p>&copy; 2025 Afghan Proverbs. All rights reserved. <br> 
+      Made with ❤️Somaya Ahmdi
+    </p>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
